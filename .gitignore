@@ -1,2 +1,2 @@
 # Ignore these files to commit to github
-./node_modules/
+node_modules/
