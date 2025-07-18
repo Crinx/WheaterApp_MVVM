@@ -14,7 +14,7 @@ class WeatherViewModel {
 
         return {
             city: weather.city,
-            temperature: `${weather.tempCelsius}°C`,
+            temperature: `${weather.temp}°C`,
             summary: weather.condition.toUpperCase()
         };
     }
