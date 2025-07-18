@@ -2,7 +2,8 @@ const axios = require('axios');
 require('dotenv').config();
 
 class WeatherService {
-    async fetchWheater(city) {
+
+    async fetchWeather(city) {
 
         // OpenWeather API URL, set wheater variable from model and get API key from .env file
         const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${process.env.WHEATER_API_KEY}`;
@@ -22,4 +23,4 @@ class WeatherService {
     }
 }
 
-module.exports = new WheaterService();
+module.exports = new WeatherService();
